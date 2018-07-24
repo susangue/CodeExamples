@@ -1,0 +1,401 @@
+@import url("toolkit_base.css");
+@import url("anythingslider.css");
+@import url("//fonts.googleapis.com/css?family=Copse");
+
+/*  ================================================================================================
+	Base Styles for all Toolkits
+	================================================================================================ */		
+	.educators a, 
+	.educators a:visited {color:#b31b1b; text-decoration:none;}
+	.educators a:hover {color:#b31b1b; text-decoration:underline; }	
+	a:focus { outline: 2px solid #B31B1B; text-decoration: underline; }
+	
+	.contentWrapper { background:#f8f5ed; }
+	
+	.contentContainer { 
+		background:#edebe1 url(../images/ED_bgFabric.png) left top repeat;
+		padding-bottom: 1.538em; }
+	
+	.educators ul { 
+		margin-top:0;
+		margin-bottom: 10px; }
+		
+	.divide { border-color:#224726; }
+	
+	.grid-8.subContent { width:500px; float:right; margin:0 10px; }
+	
+	.educators p + ul, .educators p + ol { margin-top:-10px; }	
+
+/*  ================================================================================================
+	Header Area Home and Navigation
+	================================================================================================ */	
+	.educators .headerContainer {
+		background:#29532d url(../images/ed_bgBanner.png) top left no-repeat;
+		height:3.462em;
+		-webkit-border-top-left-radius:     4px;
+		-webkit-border-top-right-radius:    4px;
+		-moz-border-radius-topleft:         4px;
+		-moz-border-radius-topright:        4px;
+		border-top-left-radius:             4px;
+		border-top-right-radius:            4px; }
+	
+	.educators .headerContainer ul { background:none; }
+	
+	.educators .headerContainer ul a { 
+		background: url(../images/ed_navDivide.png) left top no-repeat;
+		font-size: .925em;
+		border-left:0;
+		color:#fff; }
+		
+	.educators .headerContainer ul a:hover, .educators .headerContainer ul a:focus { color:#fc0; }
+	
+	.educators .homeLink, .educators .headerContainer ul a.homeLink { margin-right:30.54em; }
+	
+ /*  ================================================================================================
+	Banner Area
+	================================================================================================ */	
+	.educators .homeNavBox {
+		background:#edead9 url(../images/ed_bgBanner.png) left -45px no-repeat;
+		left:0px;
+		top:5px;
+		padding-bottom:5.75em; }
+		
+	.educators .homeNavHeader {
+		color:#305233;
+		height:3.583em;
+		text-indent:-9999em;
+		line-height:5.5em; }
+	
+	.educators .homeNav  { 
+		border-bottom:0; 
+		margin-top:0.95em; }
+	
+	.educators .homeNav li a, .educators .homeNav dt a { 
+		color:#555;
+		border-top: none; 
+		margin-bottom:1px;
+		line-height:1.28em; }
+	
+	.educators .homeNav li a:hover, .educators .homeNav dt a:hover { 
+		color:#b31b1b;
+		background:none; }
+		
+	.educators .homeNav dd {
+		background:#29532d;
+		opacity:0; /*set to 0 to allow rollover to fade in */
+		position:absolute;		
+		width:250px;
+		height:210px;
+		color:#fff; }
+		
+	.educators .homeNav dd .h3 {
+		font-size:22px;
+		line-height:25px;
+		letter-spacing:-0.025em;
+		margin:.85em 15px 6px 15px; }
+				
+	.educators .homeNav dd p { font-size:14px; padding-bottom:.125em; }
+	
+	.educators .banner { background:#edead9 url(../images/ed_bgBanner.png) left -45px no-repeat; }
+	
+	.educators .banner, .educators #slider  { height: 33.077em; }
+	.educators .anythingSlider, .educators .anythingWindow, .educators .anythingBase, .educators .anythingBase li { height:430px!important }
+	
+	.educators div.anythingSlider.activeSlider .anythingControls ul a.cur, .educators div.anythingSlider.activeSlider .anythingControls ul a {
+		background-color: #edead9;
+		color:#444; }
+		
+	.educators div.anythingSlider.activeSlider .anythingControls ul a:focus, .educators div.anythingSlider.activeSlider .anythingControls ul a:hover {
+		outline: 2px solid #b0e0e6; 
+		background-color:#f9f8f1; }
+		
+	.educators ul.isoLink {
+		background-color:none;
+		padding:0;
+		margin:5px 0 20px 0;
+		display:block;
+		border-top: 4px double #d9d3c0;
+		border-bottom: 1px solid #fff; }
+		
+		.educators ul.isoLink li  {
+			background-position: 3px 8px;
+			border-top: 1px solid #fff;
+			border-bottom: 1px solid #d9d3c0;
+			list-style:none;
+			padding:0 0 10px;
+			margin:0; }
+			
+		.educators ul.isoLink li a {
+			font-weight:bold;
+			display:block;
+			margin:0;
+			padding:6px 10px 0 27px; }
+			
+		
+/*  ================================================================================================
+	Social Links Area
+	================================================================================================ */
+	.educators ul.socialLinks li span { color:#305233; } 
+	
+	.educators .socialBar { background:none; }
+
+/*  ================================================================================================
+	Containers
+	================================================================================================ */
+	.educators .endorsementBox, .educators .overviewBox, .educators .twitterBox { background:none; }	
+	
+	.educators .endorsementBox span {
+		display:block;
+		height:13.54em;
+		margin-top:-0.125em;
+		font-size:1.833em;	
+		line-height:1em; }
+		
+		.educators .endorsementBox p {
+			position: static;
+			left: 0;
+			margin-top: -135px;
+			font-size:.833em;
+			padding:0 5px; }
+		
+	.educators .twitterInner { background: #f8f5ed; }
+	
+	.educators .twitterInner p {
+		color: #224726; }
+		
+	.educators .tweet_list li { 
+		padding-top: 0; }
+	
+	.educators .tweet_text {
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: normal; }
+		
+	.dija {
+		border: double 4px #d9d3c0;
+		background: #931506;
+		padding: .7692307em;
+		margin-right: 1.1538461em;
+		margin-top: 18px; }
+		
+		.dija p.ques {
+			margin-bottom: 0;
+			color: #fff;
+			font-size: 1.34em;
+			font-style: italic;
+			font-family: Georgia, "Times New Roman", Times, serif; }
+		
+	.dija.right {
+		margin-right: .7692307em; 
+		margin-left: 1.1538461em; }
+
+/*  ================================================================================================
+	Typography and Headers
+	================================================================================================ */
+	.educators .overviewBox .contentHeader {
+		margin: 0;
+		padding: .625em 33em .625em 1em;  }
+	
+	.educators span.contentHeader {
+		font-weight:bold;
+		background: none;
+		color:#224726;
+		height:1.215em;
+		line-height:2.417em;
+		padding-left: 1.25em;
+		border: double 3px #d9d3c0;
+		border-left:0;
+		border-right:0; }
+		
+	.educators .titleContainer a {background: url(../images/ed_iconBooksSm.png) no-repeat left bottom; padding-left:50px; margin: .725em .417em 0 .417em; line-height:1.5em; text-decoration:none; color:#222; }
+	
+		
+	.educators .overviewBox h1 {
+		font-family: 'copse',sans-serif;
+		font-size: 1.846em;
+		font-weight: normal;
+		color:#224726;
+		margin:0.792em 0.5em 12px 0.625em;	}
+		
+	.educators h1.subIntro {
+		font-family: 'copse',sans-serif;
+		font-size: 2.308em;
+		font-weight: normal;
+		color:#224726;
+		border-bottom: double 3px #d9d3c0;
+		padding:0 0 27px 0;
+		margin-bottom:7px; }
+		
+	.educators h1.subIntro span {
+		border-bottom: double 3px #d9d3c0;
+		display:block;
+		padding: 0px 0 16px 0; }
+		
+	.educators .subContent h2 {
+		font-size:1.231em;
+		color:#224726;
+		padding:0.313em 0 0.25em 0;
+		margin-bottom:0.313em;
+		margin-top:2em;
+		border-bottom: double 3px #d9d3c0;
+		border-top: 3px double #d9d3c0; }
+		
+	.educators .subContent h4 {
+		font-size:1.077em;
+		color:#224726; }
+		
+	.educators .subContent .media h4 {
+		color:#224726;
+		font-size:1.231em;
+		line-height:20px; }
+		
+	.educators .subContent .media.dija h3 { 
+		font-size:1.05em;	
+		border:0;
+		color:#fff;
+		margin-top:0; }
+		
+	.educators .subContent p,
+	.educators .subContent ul { margin-right: 1.154em;	}
+	
+	.educators h3.collapse {
+		border-top:1px solid #d9d3c0;
+		border-bottom:1px dotted #ded9c6;
+		background:url(../images/icon_plus.png) left 9px no-repeat;
+		padding:5px 0 5px 17px;
+		margin-bottom:.5em;
+		font-weight:normal;
+		font-size:1em; }
+		
+			
+/*  ================================================================================================
+	Sub Head
+	================================================================================================ */		
+	.educators .subheaderBox { 
+		background:url(../images/ED_bgSubhead.jpg) right top no-repeat;	}
+
+/*  ================================================================================================
+	Sub Head Navigation
+	================================================================================================ */		
+	.educators .sf-menu { margin-bottom:0; }
+	
+	.educators .sf-menu a {
+		font-size: .923em;
+		font-weight:bold;
+		color:#224726;
+		background:#fff url(../images/ED_bgGreenNavArrow.png) no-repeat 150px 10px;
+		padding:0.583em 1.25em;
+		text-align:left;
+		border: 4px double #d9d3c0;	}
+	/*
+	.educators .sf-menu a:hover, .educators .sf-menu a:focus {color:#b31b1b; }*/
+	
+	.educators .sf-menu ul { 
+		margin-top: 1.2em; 
+		background: #fff; 
+		padding-bottom: 2.308em; }
+	
+	.educators .sf-menu li li { border-color: #e3dfd9; top:0; }
+	
+	.educators .sf-menu li li a { 
+		background: #fff;
+		border: 0;
+		font-weight: normal;
+		padding: .5em 1.25em .417em 1.25em; }
+		
+	
+	.educators .sf-menu a:hover, .educators .sf-menu a:focus.educators,  .sf-menu li li:hover, .educators .sf-menu li li.sfHover,
+	.educators .sf-menu li li a:focus, .educators .sf-menu li li a:hover, .educators .sf-menu li li a:active, .educators .sideNav li a:hover, .educators .sideNav li a:focus, button:hover, button:focus {
+		background: none;
+		color: #b31b1b;
+		text-decoration: underline; }
+	
+	.educators .sf-sub-indicator { background: none; }
+	
+	.educators .sideNav li a.indentLi { 
+		background: url(../images/inset_icon.png) 20px 8px no-repeat;
+		padding-left: 3em; }
+	
+/*  ================================================================================================
+	Sub Page Navigation
+	================================================================================================ */		
+	.educators .sideNavHeader { 
+		border-bottom: 3px double #d9d3c0;
+		line-height: 135px;
+		height: 83px;
+		font-weight: bold; }
+	
+	.educators .sideNavBlank {
+		border-bottom: none; }
+	
+	.educators .sideNav { border:0; }
+	
+	.educators .sideNav li a {
+		border: 0;
+		border-bottom: 1px solid #d9d3c0;
+		color: #224726;
+		padding: 0.583em 1.25em; }
+	/*	
+	.educators .sideNav li a:hover, .educators .sideNav li a:focus {
+		background: none;
+		color: #b31b1b; }*/
+		
+	.educators p.f_VILogo, .educators p.f_VALogo, .educators p.f_NCLogo {
+		float:left;		
+		margin: 10px 0 0;
+		padding: 0;
+		border-left:1px solid #444;
+		height:6.364em;
+		overflow:visible;
+		text-indent:0; }
+		
+	.educators .f_VILogo a, .educators .f_VALogo a, .educators .f_NCLogo a {
+		background: none; }	
+	
+	.educators .f_VILogo img, .educators .f_VALogo img, .educators .f_NCLogo img { margin-top: -10px; margin-right: -5px; }	
+	.educators .f_VALogo img { margin-left: -7px; } 	
+	.educators .f_NCLogo img { margin-left: 4px; }
+	
+	.educators .returnBtn {
+		background: #29532D url(../images/arrow_lt_ed.png) no-repeat 0 center;
+		padding:8px 15px 8px 35px;
+		color:#fff; }
+		
+		.educators .nextSectBtn {
+			background: #29532D url(../images/arrow_rt_ed.png) no-repeat right center;
+			padding:8px 35px 8px 15px;
+			color:#fff; }
+		
+	.educators .returnBtn, .educators .nextSectBtn {
+		margin-top:100px;
+		border-radius:20px;
+		-webkit-border-radius:20px;
+		-moz-border-radius:20px;
+		font-weight:bold;
+		font-size: .85em;
+		height: 35px;
+		text-decoration:none; }
+		
+	.educators a.nextSectBtn, .educators a.returnBtn {color:#fff; }
+		
+	.educators a:hover.nextSectBtn, .educators a:hover.returnBtn, 
+	.educators a:focus.nextSectBtn, .educators a:focus.returnBtn
+		{ text-decoration:underline;
+		color:#fff !important; }
+		
+		.extraPad {
+			padding-top: 1em;
+			padding-bottom:.385em; }
+	
+/*  ================================================================================================
+	Collapsible Content Styles
+	================================================================================================ */		
+	button { background:none; border:none; color:#0972c9; font-weight:bold; }
+/*	button:hover, button:focus {text-decoration:underline; color:#b31b1b;}*/
+	
+	.collapsible-heading { }
+	.collapsible-heading-collapsed { background-position:0 -84px; }
+	.collapsible-heading-toggle { text-decoration:none; color:#224726; background:none; border:none; text-align: left; }
+	.collapsible-heading-status { left:-99999px; display:none; }
+	.collapsible-content { overflow:hidden; margin-top: 0; margin-bottom: 10px; }
+	.collapsible-content-collapsed { display:none; }
