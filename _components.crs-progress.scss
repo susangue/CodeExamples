@@ -1,0 +1,47 @@
+///////////////////////////////////////////////////////////////////////
+//
+// COURSE PROGRESS
+//
+// ///////////////////////////////////////////////////////////////////
+
+$crs-progress-font-size: font-size(xs);
+$crs-progress-border:    find-color(secondary);
+$crs-progress-color:     find-color(black);
+$crs-progress-tc:     find-color(white);
+$crs-progress-height:    30px;
+
+$crs-padding-vert: ($crs-progress-height - $crs-progress-height) / 2;
+$crs-padding-hor:  9px;
+
+.crs-progress {
+  display: block;
+  //@include type-layout($crs-progress-font-size, 1);
+  font-size: $crs-progress-font-size;
+  letter-spacing: 1.5px;
+  color: $crs-progress-tc;
+  text-transform: uppercase;
+  float: left;
+
+  &__text {
+    display: inline-block;
+    padding-right: 10px;
+  }
+}
+
+.crs-dots {
+  display: inline-block;
+  @include margin-right(3px);
+  font-style: normal;
+  font-size:0;
+  font-weight: weight(normal);
+  line-height: line-height($crs-progress-height);
+  width: 10px;
+  height: 10px;
+  border: 2px solid $crs-progress-border;
+  background-color: $crs-progress-border;
+  border-radius: 10px;
+}
+
+.crs-dots--fill {
+  background-color: $crs-progress-color;
+}
