@@ -1,0 +1,25 @@
+{{> html-head }}
+{{> skip-nav}}
+
+<div class="wrapper crs-wrap">
+{{> course-lesson}}
+{{#if interaction}}
+    {{> page-title
+      type="dark"
+      class="page-heading--interaction"
+    }}
+    {{/if}}
+  <section id="main" class="wrapper crs-content {{#or content 'crs-cover__img' content 'bg-arrow' content 'bg-park' content 'crs-final__img' content 'crs-tsum__img' }} {{content}} {{else}} bg-arrow {{/or}} {{#if flush}}crs-content--flush{{/if}}">
+
+
+    {{> body}}
+
+
+
+  </section>
+
+  {{#if transition}}{{> transition-text }}{{/if}}
+</div>
+{{> course-footer}}
+{{> html-scripts}}
+{{> html-footer }}

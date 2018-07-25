@@ -1,0 +1,424 @@
+// Tabs Left
+
+// tab pos
+
+.pos-rel {
+  position: relative;
+}
+
+.vertical {
+  background-color: transparent;
+
+  > li {
+    @include breakpoint(medium) {
+    text-align: center;
+    }
+  }
+
+}
+
+.tab {
+
+  &--book__bg {
+    background-color: find-color(primary, darker);
+
+    .tabs {
+    border: none;
+    }
+  }
+
+  &--book__title {
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    background-color: find-color(primary, darker);
+    box-shadow: 0px -11px 10px -5px rgba(0, 0, 0, 0.2);
+
+  }
+
+  &--content__book {
+    font-size: font-size(lg);
+    border: none;
+  }
+
+  &--arrow-col {
+    background-color: find-color(neutral, lighter);
+    padding: 1.125rem;
+  }
+
+  &--left-arrow,
+  &--left {
+    position: relative;
+
+    > a {
+    margin-bottom: 5px;
+    background-color: find-color(neutral, lightest);
+    border: 1px solid find-color(neutral, dark);
+    padding: $tab-item-padding-vert;
+    font-size: font-size(md);
+    line-height: 24px;
+
+    @include breakpoint(small only) {
+      text-align: center;
+    }
+
+    &:focus,
+    &:hover {
+      background-color: find-color(white);
+    }
+
+    }
+
+    > span {
+      max-height: 104px;
+    }
+
+  }
+}
+
+.tab--left > a[aria-selected='true'] {
+  color: find-color(white);
+  background-color: find-color(secondary, darker);
+  border: none;
+}
+
+.tab--left-arrow > a[aria-selected='true'] {
+  color: find-color(white);
+  background-color: find-color(secondary, darker);
+  border: none;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 44px solid transparent;
+    border-top: 44px solid transparent;
+    border-left: 20px solid find-color(secondary, darker);
+    clear: both;
+    right: -40px;
+        @include breakpoint(small only){
+          display: none;
+        }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 20px;
+    height: 100%;
+    background-color: find-color(secondary, darker);
+    clear: both;
+        @include breakpoint(small only){
+          display: none;
+        }
+  }
+}
+
+.left-arrow__double > a[aria-selected='true'] {
+  &:after {
+    border-bottom: 55px solid transparent;
+    border-top: 55px solid transparent;
+  }
+}
+
+
+.tab-bk-1 > a,
+.tab-bk-2 > a,
+.tab-bk-3 > a {
+  margin: 0 auto;
+  line-height: $base-line-height;
+  background-color: white;
+  padding: 3rem 2rem;
+  font-size: font-size(sm) + .05;
+
+  &:before {
+    content: '';
+    height: 9px;
+    width: 80%;
+    background-color: find-color(gray, light);
+    position: absolute;
+    top: 20px;
+    left: 10%;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: white;
+
+    &:before {
+      background-color: find-color(secondary);
+    }
+  }
+
+}
+
+.tab-bk-1 > a {
+  width: 96%;
+
+}
+
+.tab-bk-2 > a {
+  width: 98%;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+
+}
+
+.tab-bk-3 > a {
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 4.25rem;
+
+}
+
+.tab--book__title > a[aria-selected='true'] {
+  color: $body-font-color;
+ &:before {
+      background-color: find-color(secondary, darker);
+    }
+}
+
+
+.border-bot {
+  &__intro {
+    position: relative;
+  }
+
+  &__interaction {
+    border-bottom: 6px find-color(primary, darker) solid;
+  }
+
+  &.is-active {
+      border-color: find-color(secondary, darker);
+    }
+
+  &:before {
+    content: '';
+    background-color: find-color(neutral, lighter);
+    border-bottom: 6px find-color(primary, darker) solid;
+    width: 100%;
+    height: 26px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+
+// Image Tabs
+// --------------
+
+.tab-col--bg {
+  background-color: find-color(neutral, lighter);
+  padding: 1.125rem;
+  border-right: 1px solid find-color(gray, border);
+}
+
+.tab-img {
+  position: relative;
+  margin-bottom: 20px;
+  border: 1px solid find-color(secondary, light);
+  min-height: 144px;
+
+  > a {
+  position: absolute;
+  background-color: find-color(secondary);
+  background: rgba(153, 84, 44, 0.8);
+  color: find-color(white);
+  font-size: font-size(md);
+  font-weight: 700;
+  height: 100%;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 21px;
+
+   &:focus,
+   &:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: find-color(black);
+  }
+  }
+
+   > a[aria-selected='true'] {
+    background: rgba(80, 10, 64, 0.8);
+    color: find-color(white);
+   }
+}
+
+.tab-img--1 {
+  background: url(../img/topic1/nps-crs2-image-tabs-7.jpg) no-repeat top left;
+}
+
+.tab-img--2 {
+  background: url(../img/topic1/nps-crs2-image-tabs-8.jpg) no-repeat top left;
+}
+
+.tab-img--3 {
+  background: url(../img/topic1/nps-crs2-image-tabs-9.jpg) no-repeat top left;
+}
+
+.tab-img--4 {
+  background: url(../img/topic2/nps-crs2-card-10.jpg) no-repeat top left;
+  > a {
+    padding: 45px 20px;
+  }
+}
+
+.tab-img--5 {
+  background: url(../img/topic2/nps-crs2-card-7.jpg) no-repeat top left;
+  > a {
+    padding: 45px 20px;
+  }
+}
+
+.tab-img--6 {
+  background: url(../img/topic2/nps-crs2-card-8.jpg) no-repeat top left;
+  > a {
+    padding: 50px 20px;
+  }
+}
+
+.tab-img--18 {
+  background: url(../img/topic2/nps-crs2-card-9.jpg) no-repeat top left;
+  > a {
+    padding: 60px 20px;
+  }
+}
+
+.tab-img--7,
+.tab-img--8,
+.tab-img--9,
+.tab-img--10,
+.tab-img--11,
+.tab-img--12,
+.tab-img--13,
+.tab-img--14,
+.tab-img--15,
+.tab-img--16,
+.tab-img--17,
+.tab-img--18,
+.tab-img--19 {
+  width: 200px;
+  //height: 200px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0;
+  > a {
+    font-size: font-size(lg);
+  }
+}
+
+.tab-img--7 {
+  background: url(../img/topic5/nps-crs2-5col-tab-6.jpg) no-repeat 20% 70%;
+}
+.tab-img--8 {
+  background: url(../img/topic5/nps-crs2-5col-tab-7.jpg) no-repeat top left;
+}
+.tab-img--9 {
+  background: url(../img/topic5/nps-crs2-5col-tab-8.jpg) no-repeat top left;
+}
+.tab-img--10 {
+  background: url(../img/topic2/nps-crs2-image-tabs-10.jpg) no-repeat top left;
+}
+.tab-img--11 {
+  background: url(../img/topic2/nps-crs2-image-tabs-11.jpg) no-repeat top left;
+}
+.tab-img--12 {
+  background: url(../img/topic6/nps-crs2-image-tabs-1.jpg) no-repeat top left;
+}
+.tab-img--13 {
+  background: url(../img/topic6/nps-crs2-image-tabs-2.jpg) no-repeat top left;
+}
+.tab-img--14 {
+  background: url(../img/topic6/nps-crs2-image-tabs-3.jpg) no-repeat top left;
+}
+.tab-img--15 {
+  background: url(../img/topic6/nps-crs2-image-tabs-4.jpg) no-repeat top left;
+}
+.tab-img--16 {
+  background: url(../img/topic6/nps-crs2-image-tabs-5.jpg) no-repeat top left;
+}
+.tab-img--17 {
+  background: url(../img/topic6/nps-crs2-image-tabs-6.jpg) no-repeat top left;
+}
+.tab-img--18 {
+  background: url(../img/topic5/nps-crs2-5col-tab-9.jpg) no-repeat 53% 30%;
+}
+.tab-img--19 {
+  background: url(../img/topic5/nps-crs2-5col-tab-10.jpg) no-repeat top left;
+}
+
+// Stacked Book Tabs
+// --------------
+
+.stacked {
+  &-book-container {
+    min-height: 498px;
+    width: 50%;
+  }
+}
+
+.tabs {
+  &-st-bk {
+    > a {
+      width: 384px !important;
+      padding: 1.5rem 1.5rem 1.5rem 4.5rem;
+      border-radius: $callout-radius;
+      font-size: font-size(md);
+      font-weight: bold;
+
+      @include breakpoint(small only){
+        max-width: 350px !important;
+      }
+    }
+
+    > a[aria-selected='true'] {
+      background: transparent;
+      color: initial;
+      transform: translatex(80px);
+    }
+
+    > a:hover,
+    > a:focus {
+      background: transparent;
+    }
+
+    &.st-bk--b > a {
+      margin-left: 8px;
+      background: #2896c8 url(../img/lines-blue-1.jpg) repeat-y 25px 0;
+    }
+
+    &.st-bk--g > a {
+      background: #99b98e url(../img/lines-green-3.jpg) repeat-y 25px 0;
+    }
+
+    &.st-bk--o > a {
+      margin-left: 15px;
+      background: #d2783c url(../img/lines-orange-2.jpg) repeat-y 25px 0;
+    }
+  }
+
+  &-content-st-bk {
+    background: url(../img/bg-engraving.png) no-repeat center;
+    background-size: 50%;
+    min-height: 498px;
+    padding: $tab-content-padding;
+
+    .tabs-panel {
+      background: none;
+      border: none;
+    }
+  }
+}
+
+.cnt-arrow-bg {
+  background: url(../img/bg-engraving.png) no-repeat center;
+  background-size: 50%;
+  min-height: 498px;
+}

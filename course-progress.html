@@ -1,0 +1,19 @@
+<span class="crs-progress">
+  {{#pager pages page type="percent"}}
+   <span class="crs-progress__text">progress</span>
+    {{> course-help type="progress"}}
+    {{> course-help type="close"}}
+
+  {{/pager}}
+  {{#repeat dots}}<i class="crs-dots"></i>{{/repeat}}
+  {{#repeat dots-no}}<i class="crs-dots crs-dots--fill"></i>{{/repeat}}
+</span>
+
+<div class="crs-exit float-right" tabindex="0">
+  <span class="crs--close">
+    {{> course-help type="exit" }}
+  <span>Exit</span> <i class="icon--close">
+      <span class="hide" aria-hidden="true">&times;</span>
+    </i>
+  </span>
+</div>
