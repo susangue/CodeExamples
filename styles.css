@@ -1,0 +1,200 @@
+body {
+	background: #333;  
+	margin:0 auto;
+	color:#4d4f53;
+	font-family:"Myriad Pro", Arial, sans-serif; }
+   
+#wrapper  {
+	margin:10px auto 0;
+	width:612pt;
+	font-family:sans-serif;  }
+	
+a:link, a:visited {
+   color:#546699;
+   background: transparent;
+   text-decoration: underline; }
+
+.docInfo {
+	height:80px;
+	background:#efeff0;
+}
+
+#colorBar{
+	padding:15px 0 0;
+	background-color:#fff;
+}
+
+.docTitle, .docDate {
+	font-size:11pt;
+	margin-top:6pt;
+}
+
+.docTitle, .docJA {
+	float:left;
+	color:#8b8d8e;
+	font-size:9pt;
+	font-weight:bold;	
+	margin:0 0 0 50px;
+	padding:0;
+	line-height:55px;
+}
+
+.docJA{
+	font-size:12pt;
+	float:right;
+	margin-right:50px;
+}
+
+.content {
+	margin:0;
+	padding:0 36pt 24pt;
+	font-size:10.5pt;
+	line-height:15pt;
+	color:#313B5A;
+	font-weight:normal;
+} 
+	
+.contentWrapper {
+	margin:0; 
+	width:100%; 
+}
+
+.contentContainer {
+	background:#fff;
+	margin:0;
+	min-height:500pt;
+	box-shadow:0 0 10px #111111; 
+}	
+	
+h1 {
+	color:#000;
+	font-size:20pt;	
+	line-height:30pt;
+	text-align:center;
+}
+	
+h2, .h2 {
+	line-height:15pt;
+	font-size: 12pt;
+	margin:10px 0 0;
+	padding:0 0 6px 10px;
+	border-bottom: 1px solid #f1f1f1;
+}
+
+h3, .h3 {
+	line-height:13pt;
+	font-size: 11pt;
+	margin:0;
+	padding:0;
+}
+	
+h4, .h4 {
+	font-size:10.5pt;
+	font-weight:bold;
+	line-height:15pt;
+	margin:0;
+	padding:0;
+}
+
+h5, .h5 {
+	font-size:10.5pt;
+	font-weight:bold;
+	line-height:15pt;
+	margin:0;
+	padding:0;
+}
+
+ol, ul {
+	padding:0;
+	margin:0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-padding-start: 0;
+}
+
+p {
+	padding:6px 10px;
+	margin:0;
+}
+	
+/* ------table------ */	
+
+.ja-content{
+	padding:0;
+	margin:0 0 20px 0;
+	border:1px solid #f1f1f1;		
+}
+
+.itemHolder{
+	margin:0 0 0 50px;
+	border-top:1px solid transparent;	
+	border-left:1px solid #f1f1f1;	
+}	
+
+.itemHolder li{
+	list-style:none !important;
+}
+
+.icon { 
+	height:auto;
+	padding-top:8px;	
+	float:left;	
+	width: 50px;
+	text-align:center;
+}
+
+.itemHolder li ol{
+	padding:6px 10px;
+}
+
+.itemHolder li ol li {
+	font-size: 11pt;
+	list-style-type:decimal !important;
+	list-style-position:outside !important;
+	margin-left:24px;
+	line-height:20px;
+}
+	
+	.itemHolder li ol li img {
+		margin:0;
+		padding:0;
+	}
+
+	
+/*-----footer----*/
+	
+.footer{
+	margin:0 auto;
+	padding: 0; 
+	border-bottom: 20px solid #f1f1f1;
+	height:45pt;
+	background:#fff;
+}
+
+.left {
+	float:left;;
+	margin-left:50px;
+}
+			
+.right {
+	float:right;
+	margin-right:50px;
+}	
+		
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    *zoom:1;
+}

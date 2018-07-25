@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<interactionData>
+	<instructions id="Instructions">Sometimes when BVA reviews a file, they determine there is not enough information to make an equitable decision. BVA sends the appeal back to the RO-level jurisdiction for more work. This action is called a “remand.” The remand is a step-by-step explanation of what the claimant and the RO-level VA office need to do before the appeal is returned to BVA.</instructions>
+	<paraContent id="1 - VA Form 9">Veteran must file a VA Form 9 with the local VA office no later than 60 days from the date VA mailed a Statement of the Case to the Veteran, or 1 year from the date of the decision notification letter, whichever is later.</paraContent>
+	<paraContent id="2 - Docketing and File Transfer">The local VA office adds the appeal to BVA’s docket, transfers the claims folder to the Board of Veterans Appeals (BVA), and notifies the Veteran that 90 days remain for submitting additional evidence, appointing or changing a representative, or asking for a hearing.</paraContent>
+	<paraContent id="3 - BVA Review">Consists of conducting requested hearings and reviewing the Veteran's appeal to issue a decision that may consist of any of the below or a combination thereof.</paraContent>
+	<paraContent id="3a - BVA Grants Appeal">BVA grants the issue(s) on appeal and notifies the Veteran.</paraContent>
+	<paraContent id="3b - BVA Denies Appeal">Veteran has 120 days to file an appeal to the US Court of Appeals for Veterans Claims (CAVC). Veteran can file for reconsideration or CUE motion with BVA, or reopen the claim at the local VA office if they have new and material evidence.</paraContent>
+	<paraContent id="3c - BVA Remands Appeal">Returns file to either the Appeals Management Center or local VA office for development and decision, with a possible return to BVA.</paraContent>
+</interactionData>		
