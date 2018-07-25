@@ -1,0 +1,327 @@
+/**** ----- Temp Classes ----- ****/
+
+.js-accordion, .js-accordion * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.js-accordion {
+    overflow: hidden;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+    margin-bottom: 8px;
+    background: lighten($gray-light, 20);
+}
+/*----- Section Titles -----*/
+
+.js-accordion__section-title {
+    width: 100%;
+    padding: 8px 15px;
+    display: inline-block;
+    border-top: 2px solid $white;
+    background: $teal url(#{$img-path}/arrow_down.png) 97% 15px no-repeat;
+    transition: all linear 0.15s;
+    font-size: 1.200em;
+    color: $white;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: teal;
+        background-color: $white;
+        background-image: url(#{$img-path}/arrow_down--teal.png);
+    }
+}
+
+
+.js-accordion__section:last-child .js-accordion__section-title {
+    border: none;
+}
+/*----- Section Content -----*/
+
+.js-accordion__section-content {
+    @include pad(10px 15px);
+    background: lighten($gray-light, 20);
+    display: none;
+
+    ul {
+        margin-bottom: 0;
+    }
+
+    @include media($tablet) {
+        > .col5,
+        > .col4 {
+        width: 45%;
+        }
+    }
+
+@include media($mobile-xtra-wide) {
+    width: 85%;
+    margin-bottom: 15px;
+
+        > .col5,
+        > .col4 {
+        width: 98%;
+        }
+
+        > ul {
+            margin-left: 10px;
+        }
+    }
+
+
+  @include media($mobile) {
+    width: 85%;
+    margin-bottom: 15px;
+
+        > .col5,
+        > .col4 {
+        width: 98%;
+        }
+
+        > ul {
+            margin-left: 10px;
+        }
+    }
+}
+.js-accordion a {
+  //  padding: 6px 32px 12px 12px;
+    font-size: 14px;
+}
+
+/*---- Tab Section Content -----*/
+
+.js-tab__section-header, .js-tab__section-title {
+    display: table-cell;
+    margin-left: -1px;
+}
+.js-tab__section-header:first-child {
+    margin-left: 0;
+}
+.js-tab__section-content {
+    padding: 15px;
+    background: lighten($gray-light, 20);
+    display: none;
+    max-height: 400px;
+
+    .content-img {
+        margin-top: 5px;
+    }
+
+    .std-img > img {
+        margin: 0;
+    }
+
+    @include media($tablet) {
+        > .col5,
+        > .col4 {
+        width: 45%;
+        }
+    }
+
+    @include media($mobile-xtra-wide) {
+        max-height: auto;
+        > .col5,
+        > .col4 {
+        width: 98%;
+        }
+
+        > ul {
+            margin-left: 10px;
+        }
+    }
+
+    @include media($mobile) {
+        max-height: auto;
+        > .col5,
+        > .col4 {
+        width: 98%;
+        }
+
+        > ul {
+            margin-left: 10px;
+        }
+    }
+
+}
+
+.js-tab__section-title {
+    &.isactive {
+        &:focus {
+        background-color: lighten($gray-light, 20);
+        color: $teal;
+        }
+    }
+
+    &:hover, &:focus {
+        background-color: lighten($gray-light, 20);
+        color: $teal;
+        background-image: url(#{$img-path}/arrow_down--teal.png);
+    }
+}
+
+a.js-tab__section-title {
+    display: inline-block;
+    border-right: 2px solid $gray-light;
+    border-left: 2px solid $gray-light;
+    color: $white;
+    padding: 10px 45px 10px 10px;
+    background-image: url(#{$img-path}/arrow_down.png);
+    background-position: 98% center;
+    background-repeat: no-repeat;
+}
+#js-tab__ul {
+    margin: 0;
+    width: 100%;
+    display: table;
+}
+#js-tab__tabs {
+    background-color: $teal;
+    color: $white;
+}
+/* --- Scrolling List  ---*/
+
+#scrollContainer {
+    width: 765px;
+    height: 450px;
+    margin: 0 auto;
+    background-color: $white;
+    overflow: hidden;
+}
+#scrollDirections {
+    float: left;
+    width: 380px;
+}
+.scrollDirections {
+    width: 40%;
+    display: block;
+}
+#listOverlay {
+    width: 765px;
+    height: 450px;
+    padding: 20px 0 0 20px;
+    background: #ddd;
+    border: 4px solid #8cd2f4;
+    position: absolute;
+    visibility: hidden;
+    z-index: 99999;
+    color: #505050;
+}
+/* === BUTTONS === */
+
+#btnDone {
+    width: 75px;
+    height: 74px;
+    border: none;
+    margin-top: 20px;
+    margin-left: 650px;
+    background: url(#{$img-path}/btnDone.png) no-repeat;
+    cursor: pointer;
+    position: relative;
+}
+#btnDown {
+    width: 46px;
+    height: 25px;
+    margin: -21px 0 0 535px;
+    padding: 0;
+    border: none;
+    background: url(#{$img-path}/triBtm.png) no-repeat;
+    cursor: pointer;
+    position: absolute;
+}
+#btnReplayScroll {
+    width: 122px;
+    height: 45px;
+    border: none;
+    background: url(#{$img-path}/btnReplay.png) no-repeat;
+    float: right;
+    margin-right: 16px;
+    margin-top: -16px;
+}
+#btnUp {
+    width: 46px;
+    height: 26px;
+    margin-left: 155px;
+    margin-top: 0;
+    padding: 0;
+    border: none;
+    background: url(#{$img-path}/triTop.png) no-repeat;
+    cursor: pointer;
+    position: absolute;
+    visibility: hidden;
+}
+/* === TABS === */
+
+#scrollBox {
+    width: 371px;
+    height: 288px;
+    margin: 25px 0 0 20px;
+    background: #b6d4e0;
+    overflow: hidden;
+    display: block;
+}
+#barTop {
+    width: 371px;
+    height: 22px;
+    background: url(#{$img-path}/bar.png);
+    margin-left: 380px;
+    margin-top: 25px;
+    padding: 0;
+    position: absolute;
+}
+#barBottom {
+    width: 371px;
+    height: 22px;
+    margin-top: -22px;
+    background: url(#{$img-path}/bar.png);
+    margin-left: 380px;
+    padding: 0;
+    position: absolute;
+}
+.tabSlideObj {
+    width: 371px;
+    transition: margin-top 1s;
+    -webkit-transition: margin-top 1s;
+    // /* For Safari 3.1 to 6.0 */
+    // /*position:absolute;*/
+}
+.btnScrollTxt {
+    margin-left: 24px;
+    position: absolute;
+}
+.btnScrollTxtDbl {
+    margin-left: 19px;
+    position: absolute;
+}
+.tabTxtItem {
+    height: 46px;
+    margin: 0;
+    padding: 4px 10px 0 50px;
+    font-size: 14px;
+    // background: url(#{$img-path}/btnGreenTab.png);
+
+    line-height: 1.2em;
+}
+.tabBox {
+    margin-top: 24px;
+    overflow: hidden;
+}
+.tabBox div {
+    height: 46px;
+    margin-top: 2px;
+    background: url(#{$img-path}/btnGreenTab.png);
+    overflow: hidden;
+}
+
+.ul_panel {
+    top: 0px;
+    width: 418px;
+    position: absolute;
+}
+
+.instructions {
+    color: $blue;
+    font-style: italic;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: .95em;
+}
