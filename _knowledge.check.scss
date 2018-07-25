@@ -1,0 +1,292 @@
+/*-- Course Assessment/Exam Styles --*/
+.border-kc {
+    background: $white url(#{$img-path}/sbaAcct_image-kcbg.jpg) 0 20px no-repeat;
+
+
+  @include media($tablet) {
+    background-image: none;
+  }
+
+  @include media($mobile) {
+    background-image: none;
+  }
+}
+
+.border-kc .col10 {
+    padding: 25px 10px;
+
+  @include media($mobile-plus) {
+    padding: 0 10px;
+  }
+
+  @include media($mobile) {
+    padding: 0 10px;
+  }
+}
+
+.pInstruct {
+    color: $inuit-base-text-color;
+    padding: 10px 100px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+    font-size: 1.2em;
+}
+.clsCompleteList {
+    padding: 0 100px 10px;
+}
+.pQuestion {
+    padding: 16px;
+    font-weight: bold;
+    background-color: #e0dacc;
+}
+.pQuestionCnt {
+    font-weight: bold;
+    width: 290px;
+    color: #000;
+    text-align: center;
+    margin: 15px 0;
+}
+.pRemediation {
+    width: 270px;
+    margin-top: 0;
+}
+.pRemediationValue {
+    width: auto;
+    margin: auto 0 0 0;
+    font-weight: bold;
+}
+.pOption {
+    width: 200px;
+    color: $inuit-base-text-color;
+}
+.exam_right .remIcon {
+    margin-left: 112px;
+}
+#divTryAgain {
+    background-color: $white;
+    float: left;
+    width: 312px;
+    text-align: center;
+    margin-left: -10px;
+    height: 65px;
+    padding-top: 10px;
+    position: absolute;
+    bottom: 8px;
+}
+.btnTryAgain {
+    background-color: $gray-light;
+    border: 3px solid $teal;
+    color: $inuit-base-text-color;
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    border-radius: 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+.btnTryAgain:focus, .btnTryAgain:hover {
+    background-color: $white;
+    border: 3px solid $teal;
+    color: #c5242d;
+}
+.rem_header {
+    border-bottom: 3px solid #e8ecf0;
+    line-height: 65px;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    font-size: 1.8em;
+    width: 650px;
+    background: #e8ecf0;
+    text-align: center;
+    font-weight: bold;
+    margin-left: -10px;
+    color: #2d426f;
+}
+.rem_left {
+    width: 652px;
+    height: auto;
+    padding: 0 15px;
+    margin-right: 2px;
+}
+.rem_exclamation {
+    text-align: center;
+    margin-bottom: 0;
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2d426f;
+}
+.rem_exclamation hr, .exam_main hr {
+    width: 30px;
+    height: 3px;
+    background-color: #2d426f;
+    border: none;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.rem_ansCorrect {
+    float: left;
+    padding-right: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.rem_amtCorrect {
+    font-weight: bold;
+    font-size: 18px;
+}
+.rem_right {
+    border-left: 3px solid #e8ecf0;
+    width: 315px !important;
+    float: left !important;
+    height: 434px;
+    padding: 0 10px !important;
+    margin-top: -70px;
+}
+.rem_score {
+    font-weight: bold;
+    font-size: 2em;
+    float: left;
+    text-align: center;
+    padding: 15px 0 !important;
+    width: 100%;
+}
+.rem_right .remIcon {
+    position: absolute;
+    top: 25%;
+    right: 92px;
+}
+#pExamSummary {
+    height: auto;
+    text-align: center;
+    margin: 0;
+}
+
+.directions {
+    color: $blue;
+    font-style: italic;
+    margin-bottom: 8px;
+    width: 93%;
+    font-weight: bold;
+    font-size: .95em;
+    line-height: 1.6em;
+
+  @include media($tablet) {
+    width: 100%;
+  }
+
+  @include media($mobile-plus) {
+    font-weight: $fw--reg;
+    line-height: 1.4em;
+  }
+
+  @include media($mobile) {
+    font-weight: $fw--reg;
+    line-height: 1.4em;
+  }
+}
+
+.question {
+    margin-bottom: 8px;
+    font-weight: $fw--reg;
+    background-color: $blue;
+    color: $white;
+    @include padding(5px 10px);
+    width: 93%;
+
+  @include media($tablet) {
+    width: 100%;
+    }
+
+  @include media($mobile) {
+    width: 100%;
+  }
+
+
+    &:before {
+        content: 'Q :';
+        display: inline-block;
+        position: relative;
+        height: 38px;
+        width: 38px;
+        text-align: center;
+        line-height: 32px;
+        font-size: 2em;
+        font-weight: bold;
+        color: inherit;
+        margin-right: 10px;
+    }
+
+  @include media($tablet) {
+    width: 100%;
+  }
+
+  @include media($mobile) {
+    width: 100%;
+  }
+}
+
+#feedback {
+    height: auto !important;
+    min-height: 200px;
+    width: 31%;
+    float: left;
+    border: 2px solid $blue;
+    border-radius: $base-radius *2;
+
+    > h4 {
+        font-weight: $fw--bold;
+        min-height: 46px;
+        width: 100%;
+        padding: 0;
+        padding-top: 20px;
+        padding-left: 65px;
+        margin-bottom: 12px;
+
+      @include media($mobile) {
+        font-weight: normal;
+        font-size: 1.2rem;
+      }
+    }
+
+  @include media($tablet-sm) {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    min-height: auto;
+  }
+
+  @include media($mobile-plus) {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  @include media($mobile) {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.kc_correct__border {
+    border: 2px solid $green !important;
+}
+h4.feedback_correct {
+    background: url(#{$img-path}/sbaAcct_image-kccorrect.png) 0 0 no-repeat;
+    margin-top: -8px;
+    margin-left: -8px;
+}
+.kc_incorrect__border {
+    border: 2px solid $red !important;
+}
+h4.feedback_incorrect {
+    background: url(#{$img-path}/sbaAcct_image-kcincorrect.png) 0 0 no-repeat;
+    margin-top: -8px;
+    margin-left: -8px;
+}
+#feedback p {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+#feedback ul > li {
+    padding-right: 8px;
+}
