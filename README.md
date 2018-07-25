@@ -13,3 +13,5 @@
 
 ## Toolkit
 <p>Contains one html file, 1 css file and 1 png reference related to the applicable coded page.</p>
+
+<b>These files are not to be tampered with or altered in any way. No use of these files may be used without direct permission from the user of this GitHub account.</b>
