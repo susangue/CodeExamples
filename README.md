@@ -7,7 +7,7 @@
 <p>Contains three actionscript files, one XML files, one CSS files and two png references related to the applicable coded pages.</p>
 
 ## NPS
-<p>Contains two scss files, four html files, and two png references related to the applicable coded pages.</p>
+<p>Contains two scss files, four html files, and two png references related to the applicable coded pages. The HTML files contain Handlebars usage.</p>
 
 ## SBA
 <p>Contains two scss files, two markdown files, three png references related to the applicable coded pages.</p>
